@@ -1,11 +1,13 @@
 // src/pages/Home.tsx
 
-import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from '../../store/reducers/counterSlice'; // Importando as ações
+import { useDispatch, useSelector } from 'react-redux';
+
 import reactLogo from '../../assets/react.svg';
-import viteLogo from '/vite.svg';
 import { useLorem } from '../../hooks/useLorem';
+import { decrement, increment } from '../../store/reducers/counterSlice'; // Importando as ações
+
 import './index.css';
+import viteLogo from '/vite.svg';
 
 function Home() {
   const count = useSelector(

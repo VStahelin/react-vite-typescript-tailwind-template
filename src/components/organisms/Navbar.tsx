@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Button from '../atoms/Button';
-import useScreenSize from '../../hooks/useScreenSize';
-import Icon from '../atoms/Icon';
-import { faSun } from '@fortawesome/free-solid-svg-icons/faSun';
+
 import { faMoon } from '@fortawesome/free-solid-svg-icons/faMoon';
+import { faSun } from '@fortawesome/free-solid-svg-icons/faSun';
+import { useDispatch, useSelector } from 'react-redux';
+
+import useScreenSize from '../../hooks/useScreenSize';
 import { RootState } from '../../store';
 import { toggleDarkMode } from '../../store/reducers/themeSlice';
+import Button from '../atoms/Button';
+import Icon from '../atoms/Icon';
 
 interface NavbarProps {
   className?: string;

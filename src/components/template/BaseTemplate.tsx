@@ -1,8 +1,10 @@
 import React from 'react';
+
 import { useSelector } from 'react-redux';
+
 import { RootState } from '../../store';
-import Navbar from '../organisms/Navbar';
 import Footer from '../organisms/Footer';
+import Navbar from '../organisms/Navbar';
 
 interface BaseTemplateProps {
   children: React.ReactNode;

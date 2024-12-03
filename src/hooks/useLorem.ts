@@ -1,5 +1,6 @@
 // src/hooks/useLorem.ts
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import { fetchLoremText } from '../services/api/services/loremService';
 
 export const useLorem = () => {
