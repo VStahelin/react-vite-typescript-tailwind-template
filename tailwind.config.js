@@ -5,25 +5,26 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#038C8C', // Cor principal (intermediária)
-          dark: '#025159', // Variante escura
-          light: '#03A696', // Variante clara
+          DEFAULT: '#038C8C',
+          dark: '#025159',
+          light: '#03A696',
         },
         accent: {
-          DEFAULT: '#F28705', // Cor de destaque vibrante
+          DEFAULT: '#F28705',
         },
         secondary: {
-          DEFAULT: '#025159', // Cor secundária principal
-          dark: '#012E40', // Variante escura
-          light: '#038C8C', // Variante clara
+          DEFAULT: '#025159',
+          dark: '#012E40',
+          light: '#038C8C',
         },
         background: {
-          DEFAULT: '#012E40', // Fundo principal escuro
-          light: '#03A696', // Fundo alternativo claro
+          DEFAULT: '#012E40',
+          light: '#03A696',
+          dark: 'black',
         },
         text: {
-          primary: '#038C8C', // Texto principal
-          secondary: '#F28705', // Texto secundário de destaque
+          primary: '#038C8C',
+          secondary: '#F28705',
         },
       },
     },

@@ -23,10 +23,6 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
     setIsMobileScreen(screenSize.isMobileView);
   }, [screenSize.isMobileView]);
 
-  const mobileView = () => {
-    return <nav className={`fixed top-0 w-full p-4 !${className} `}></nav>;
-  };
-
   const desktopView = () => {
     return (
       <nav
@@ -54,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
     );
   };
 
-  return isMobileScreen ? mobileView() : desktopView();
+  return isMobileScreen ? desktopView() : desktopView();
 };
 
 export default Navbar;

@@ -8,8 +8,8 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className, isDarkMode, children }) => {
   const bgColor = isDarkMode
-    ? '!bg-background text-secondary'
-    : '!bg-secondary-dark text-primary';
+    ? '!bg-background-dark text-secondary'
+    : '!bg-background text-primary';
 
   const content = () => {
     return children ? (
